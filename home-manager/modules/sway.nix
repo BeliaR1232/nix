@@ -1,0 +1,6 @@
+{
+  program.sway = {
+    enable = true;
+    
+  }
+}
