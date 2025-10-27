@@ -12,19 +12,17 @@
     pavucontrol
 
     # CLI utils
-    brightnessctl
+    brightnessctl # управление яркостью
     fzf
-    grimblast
     ntfs3g
-    microfetch
     ripgrep
     udiskie
     unzip
-    yt-dlp
+    yt-dlp # скачивает из youtube и т.д.
+    ffmpeg
+    ffmpegthumbnailer
     zip
-    nil
-    nixfmt-rfc-style
-    jq
+    jq # json-парсер
     playerctl
 
     #Dev
@@ -34,11 +32,14 @@
     rustc
     ruff
     python313
+    nil
+    nixfmt-rfc-style
 
     # WM stuff
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
+    dconf
 
     # Other
     bemoji

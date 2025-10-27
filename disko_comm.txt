@@ -1,1 +1,3 @@
 sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount ./disko.nix
+sudo nix run github:nix-community/disko -- --mode zap_create_mount ./hosts/beliar-laptop/disko.nix
+sudo nixos-generate-config --no-filesystems --dir ./hosts/beliar-laptop/

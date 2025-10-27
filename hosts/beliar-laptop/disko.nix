@@ -1,27 +1,21 @@
-{
+{ disk, ... }:{
   disko.devices = {
     disk = {
       my-disk = {
-        device = "/dev/sda";
+        device = disk;
         type = "disk";
         content = {
           type = "gpt";
           partitions = {
             ESP = {
               type = "EF00";
-              size = "256M";
+              size = "512M";
               content = {
                 type = "filesystem";
                 format = "vfat";
-                mountpoint = "/boot";
-                mountOptions = [ "umask=0077" ];
-              };
-            };
-            swap = {
-              size = "8G";
-              content = {
-                type = "swap";
-                resumeDevice = true;
+                # mountpoint = "/boot";
+                # mountOptions = [ "umask=0077" ];
+                name = "boot";
               };
             };
             root = {
@@ -29,7 +23,8 @@
               content = {
                 type = "filesystem";
                 format = "ext4";
-                mountpoint = "/";
+                # mountpoint = "/";
+                name = "nixos";
               };
             };
           };

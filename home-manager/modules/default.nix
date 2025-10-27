@@ -1,7 +1,6 @@
 {
   imports = [
     ./alacritty.nix
-    ./git.nix
     ./hyprland
     ./neovim.nix
     ./starship.nix

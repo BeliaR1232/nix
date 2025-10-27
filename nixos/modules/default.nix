@@ -5,7 +5,6 @@
     ./boot.nix
     ./env.nix
     ./home-manager.nix
-    ./hyprland.nix
     ./kernel.nix
     ./mime.nix
     ./net.nix
@@ -18,5 +17,6 @@
     ./udiskie.nix
     ./fonts.nix
     ./docker.nix
+    ./git
   ];
 }

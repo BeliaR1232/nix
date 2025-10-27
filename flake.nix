@@ -14,7 +14,10 @@
       url = "github:danth/stylix/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
+    disko = {
+        url = "github:nix-community/disko";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
     # COMING SOON...
     #nixvim = {
     #  url = "github:nix-community/nixvim";
@@ -22,21 +25,24 @@
     #};
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, disko, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "beliar";
     hosts = [
-      { hostname = "beliar-laptop"; stateVersion = "25.05"; }
+      { hostname = "beliar-laptop"; stateVersion = "25.05"; disk = disks = "/dev/nvme0n1" }
     ];
 
-    makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
+    makeSystem = { hostname, stateVersion, disk }: nixpkgs.lib.nixosSystem {
       system = system;
       specialArgs = {
-        inherit inputs stateVersion hostname user;
+        inherit inputs stateVersion hostname user disk;
       };
 
       modules = [
+        disko.nixosModules.disko
+        ./disko.nix
+        ./hardware-configuration.nix
         ./hosts/${hostname}/configuration.nix
       ];
     };
