@@ -26,7 +26,6 @@
     nixfmt-rfc-style
     jq
     playerctl
-    # v2ray
 
     #Dev
     uv

@@ -12,7 +12,14 @@
       size = 24;
       package = pkgs.vanilla-dmz;
     };
-
+    targets = {
+      neovim.enable = false;
+      waybar.enable = false;
+      alacritty.enable = false;
+      wofi.enable = false;
+      hyprland.enable = false;
+      hyprlock.enable = false;
+    };
     iconTheme = {
       enable = true;
       package = pkgs.papirus-icon-theme;

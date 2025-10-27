@@ -60,8 +60,8 @@
         "editorOverviewRuler.border" = "#0000";
       };
 
-    #   "editor.fontFamily" = "JetBrainsMono Nerd Font";
-        "editor.fontFamily" = "FiraCode Nerd Font Mono";
+      #   "editor.fontFamily" = "JetBrainsMono Nerd Font";
+      "editor.fontFamily" = "FiraCode Nerd Font Mono";
       "editor.fontSize" = 14;
       "editor.lineHeight" = 1.5;
       "editor.tabCompletion" = "on";
@@ -109,18 +109,16 @@
         "editor.defaultFormatter" = "brettm12345.nixfmt-vscode";
       };
 
-      "window.menuBarVisibility" = "toggle";
-      "window.customTitleBarVisibility" = "never";
-      "window.titleBarStyle" = "native";
       "window.zoomLevel" = 2;
       "window.commandCenter" = false;
       "chat.commandCenter.enabled" = false;
 
-    #   "terminal.integrated.fontFamily" = "JetBrainsMono Nerd Font";
-        "terminal.integrated.fontFamily" = "FiraCode Nerd Font Mono";
+      #   "terminal.integrated.fontFamily" = "JetBrainsMono Nerd Font";
+      "terminal.integrated.fontFamily" = "FiraCode Nerd Font Mono";
 
       "code-runner.runInTerminal" = true;
       "explorer.confirmDelete" = false;
+      "git.confirmSync" = false;
     };
   };
 }

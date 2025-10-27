@@ -18,6 +18,5 @@
     ./udiskie.nix
     ./fonts.nix
     ./docker.nix
-#    ./v2ray.nix
   ];
 }
