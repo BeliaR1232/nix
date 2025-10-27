@@ -15,7 +15,7 @@
                 format = "vfat";
                 mountpoint = "/boot";
                 mountOptions = [ "umask=0077" ];
-                extraArgs = [ "-n boot" ];
+                extraArgs = [ "-n" "boot" ];
               };
             };
             root = {
@@ -24,7 +24,7 @@
                 type = "filesystem";
                 format = "ext4";
                 mountpoint = "/";
-                extraArgs = [ "-n nixos" ];
+                extraArgs = [ "-L" "nixos" ];
               };
             };
           };
