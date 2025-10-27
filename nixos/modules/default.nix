@@ -17,6 +17,6 @@
     ./udiskie.nix
     ./fonts.nix
     ./docker.nix
-    ./git
+    ./git.nix
   ];
 }
