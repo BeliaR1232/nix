@@ -2,7 +2,7 @@
   disko.devices = {
     disk = {
       my-disk = {
-        device = disk;
+        device = "/dev/nvme0n1";
         type = "disk";
         content = {
           type = "gpt";
