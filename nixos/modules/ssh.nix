@@ -5,6 +5,11 @@
         Hostname 10.0.0.153
         Port 2290
         User beliar
+        
+      Host keenetic
+        Hostname 10.0.0.1
+        Port 22
+        User root
     ";
   };
 }
