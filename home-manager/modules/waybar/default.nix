@@ -4,7 +4,11 @@
     style = ./style.css;
     settings = {
       mainBar = {
-        # layer = "top";
+        output = [
+          "eDP-1"
+          "HDMI-A-1"
+        ];
+        layer = "top";
         position = "top";
         height = 30;
         modules-left = [ "hyprland/workspaces" ];
