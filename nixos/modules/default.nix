@@ -17,7 +17,6 @@
     ./udiskie.nix
     ./fonts.nix
     ./docker.nix
-    ./git.nix
     ./hyprland.nix
   ];
 }

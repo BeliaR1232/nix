@@ -12,5 +12,6 @@
     ./chromium.nix
     ./vscode.nix
     ./ranger.nix
+    ./git.nix
   ];
 }
