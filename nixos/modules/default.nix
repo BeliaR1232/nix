@@ -18,5 +18,6 @@
     ./fonts.nix
     ./docker.nix
     ./hyprland.nix
+    ./foot.nix
   ];
 }

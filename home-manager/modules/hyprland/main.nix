@@ -17,7 +17,7 @@
         "HDMI-A-1,2560x1440@140,1920x0,1"
       ];
       "$mainMod" = "SUPER";
-      "$terminal" = "alacritty";
+      "$terminal" = "foot";
       "$browser" = "chromium";
       "$editor" = "codium";
       "$fileManager" = "$terminal -e sh -c 'ranger'";
@@ -35,9 +35,9 @@
         gaps_in = 2;
         gaps_out = 5;
 
-        border_size = 2;
+        border_size = 3;
 
-        "col.active_border" = "rgba(DCD7BAff)";
+        "col.active_border" = "rgb(054c76)";
         "col.inactive_border" = "rgba(595959aa)";
 
         resize_on_border = false;
@@ -49,8 +49,8 @@
       decoration = {
         rounding = 5;
 
-        active_opacity = 1.0;
-        inactive_opacity = 1.0;
+        active_opacity = 0.9;
+        inactive_opacity = 0.8;
 
         shadow = {
           enabled = true;
@@ -69,7 +69,7 @@
       };
 
       animations = {
-        enabled = false;
+        enabled = true;
       };
 
       input = {

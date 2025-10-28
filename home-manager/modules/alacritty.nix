@@ -2,7 +2,6 @@
 {
   programs.alacritty = {
     enable = true;
-    # theme = "nightfox";
     theme = "tokyo_night";
     settings = {
       window.opacity = lib.mkForce 0.9;
