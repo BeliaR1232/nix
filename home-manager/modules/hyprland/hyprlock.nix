@@ -34,7 +34,7 @@
       ];
       background = [
         {
-          path = "$HOME/Pictures/Wallpapers/100.jpg";
+          path = "screenshot";
           blur_passes = 2;
           blur_size = 2;
           contrast = 1;

@@ -11,6 +11,7 @@
       charliermarsh.ruff
       jnoortheen.nix-ide
       brettm12345.nixfmt-vscode
+      yzhang.markdown-all-in-one
       # Themes
       silofy.hackthebox
       enkia.tokyo-night

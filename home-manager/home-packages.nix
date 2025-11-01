@@ -27,9 +27,7 @@
 
     #Dev
     uv
-    rustfmt
-    cargo
-    rustc
+    rustup
     ruff
     python313
     nil
