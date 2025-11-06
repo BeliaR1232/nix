@@ -24,6 +24,7 @@
     zip
     jq # json-парсер
     playerctl
+    ueberzugpp # отображение картинок в терминале
 
     #Dev
     uv
