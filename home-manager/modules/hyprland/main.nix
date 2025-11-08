@@ -14,7 +14,7 @@
 
       monitor = [
         "eDP-1,1920x1080@60,0x0,1"
-        "HDMI-A-1,2560x1440@140,1920x0,1"
+        "HDMI-A-1,3840x2160@60,1920x0,1.33333"
       ];
       "$mainMod" = "SUPER";
       "$terminal" = "foot";
