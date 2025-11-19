@@ -94,6 +94,8 @@
       };
       "python.analysis.typeCheckingMode" = "basic";
       "python.languageServer" = "Jedi";
+      "python.analysis.indexing" = true;
+      "python.analysis.autoImportCompletions" = true;
       "ruff.lineLength" = 120;
       "ruff.nativeServer" = "on";
 

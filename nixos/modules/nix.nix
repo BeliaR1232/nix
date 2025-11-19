@@ -3,6 +3,6 @@
   nix.gc = {
 	automatic = true;
 	dates = "weekly";
-	options = "--delete-older-that 14d";
+	options = "--delete-older-than 7d";
   };
 }

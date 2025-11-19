@@ -123,10 +123,11 @@
 
       windowrulev2 = [
         "workspace 7, class:feishin"
-        "workspace 2, class:chromium"
-        "workspace 4, class:(bitwarden)"
-        "opacity 0.9, class:codium"
-        "opacity 0.9, class:(telegram)"
+        "workspace 2, class: chromium-browser"
+        "workspace 4, class:Bitwarden"
+        "workspace 1, class:foot"
+        "workspace 1, class:codium"
+        "opacity 1, class:codium"
         "suppressevent maximize, class:.*"
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
       ];
